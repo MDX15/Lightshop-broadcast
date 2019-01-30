@@ -23,7 +23,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "b";
+  var prefix = "m";
 
   client.on("message", message => {
   
@@ -99,13 +99,13 @@ m.sendMessage(args)
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
 
-       bobc | لأرسال برود كاست للكل
+       mobc | لأرسال برود كاست للكل
 
-       bbc  |  لأرسال برود كاست للأونلاين
+       mbc  |  لأرسال برود كاست للأونلاين
 
-       binvite | لدعوة البوت الي سيرفرك
+       minvite | لدعوة البوت الي سيرفرك
 
-       bsupport | سيرفر السبورت** `)
+       msupport | سيرفر السبورت** `)
    message.author.sendEmbed(embed)
    
    }
