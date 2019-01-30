@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "m!"
+var prefix = "m"
 
 
 
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("m!obc")) {
+    if (message.content.startsWith("mobc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -23,7 +23,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "m!";
+  var prefix = "b";
 
   client.on("message", message => {
   
@@ -46,7 +46,7 @@ client.on("message", message => {
 
 client.on('message', message => {
     var  user = message.mentions.users.first() || message.author;
-if (message.content.startsWith("m!avatar")) {
+if (message.content.startsWith("bavatar")) {
 message.channel.send(`This avatar For ${user} link : ${user.avatarURL}`);
 }
 });
@@ -66,7 +66,7 @@ client.on('ready',  () => {
   client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('m!adminbc')){
+if (message.content.startsWith('badminbc')){
 if(!message.author.id === '476185102922285066') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
@@ -79,7 +79,7 @@ m.sendMessage(args)
 
   
   client.on('message', msg => {
-    if(msg.content === 'm!help')
+    if(msg.content === 'bhelp')
     msg.reply('Check Your DM :white_check_mark:')
   });
   
@@ -93,19 +93,19 @@ m.sendMessage(args)
   
   
   client.on("message", message => {
-    if (message.content === "m!help") {
+    if (message.content === "bhelp") {
      const embed = new Discord.RichEmbed() 
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
 
-       m!obc | لأرسال برود كاست للكل
+       bobc | لأرسال برود كاست للكل
 
-       m!bc  |  لأرسال برود كاست للأونلاين
+       bbc  |  لأرسال برود كاست للأونلاين
 
-       m!invite | لدعوة البوت الي سيرفرك
+       binvite | لدعوة البوت الي سيرفرك
 
-       m!support | سيرفر السبورت** `)
+       bsupport | سيرفر السبورت** `)
    message.author.sendEmbed(embed)
    
    }
@@ -113,10 +113,10 @@ m.sendMessage(args)
 
 
    client.on("message", message => {
-    if (message.content === "m!invite") {
+    if (message.content === "binvite") {
      const embed = new Discord.RichEmbed()
          .setColor("RANDOM")
-         .addField('Broadcast', `https://discordapp.com/api/oauth2/authorize?client_id=489960386339274771&permissions=8&scope=bot`)
+         .addField('Broadcast', `البوت حق السيرفر و مو مسموح بدعوته لسيرفر اخر`)
      message.author.send({embed});
    
     }
@@ -124,10 +124,10 @@ m.sendMessage(args)
 
 
    client.on("message", message => {
-    if (message.content === "m!support") {
+    if (message.content === "bsupport") {
      const embed = new Discord.RichEmbed()
          .setColor("RANDOM")
-         .addField('❤سيرفر الدعم الفني', `  https://discord.gg/NuQ2zYu  `)
+         .addField('❤سيرفر الدعم الفني', `    `)
      message.author.send({embed});
    
     }
@@ -138,7 +138,7 @@ m.sendMessage(args)
 
 
    client.on('message', message => {
-    if (message.content.startsWith("m!bot")) {
+    if (message.content.startsWith("bbot")) {
     message.channel.send({
         embed: new Discord.RichEmbed()
             .setAuthor(client.user.username,client.user.avatarURL)
@@ -160,7 +160,7 @@ m.sendMessage(args)
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
-          client.user.setActivity("m!help | m!invite",{type: 'WATCHING'});
+          client.user.setActivity("bhelp | Light shop",{type: 'WATCHING'});
   
   });
 
