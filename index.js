@@ -46,7 +46,7 @@ client.on("message", message => {
 
 client.on('message', message => {
     var  user = message.mentions.users.first() || message.author;
-if (message.content.startsWith("bavatar")) {
+if (message.content.startsWith("mavatar")) {
 message.channel.send(`This avatar For ${user} link : ${user.avatarURL}`);
 }
 });
@@ -79,7 +79,7 @@ m.sendMessage(args)
 
   
   client.on('message', msg => {
-    if(msg.content === 'bhelp')
+    if(msg.content === 'mhelp')
     msg.reply('Check Your DM :white_check_mark:')
   });
   
@@ -93,7 +93,7 @@ m.sendMessage(args)
   
   
   client.on("message", message => {
-    if (message.content === "bhelp") {
+    if (message.content === "mhelp") {
      const embed = new Discord.RichEmbed() 
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
@@ -113,7 +113,7 @@ m.sendMessage(args)
 
 
    client.on("message", message => {
-    if (message.content === "binvite") {
+    if (message.content === "minvite") {
      const embed = new Discord.RichEmbed()
          .setColor("RANDOM")
          .addField('Broadcast', `البوت حق السيرفر و مو مسموح بدعوته لسيرفر اخر`)
@@ -124,7 +124,7 @@ m.sendMessage(args)
 
 
    client.on("message", message => {
-    if (message.content === "bsupport") {
+    if (message.content === "msupport") {
      const embed = new Discord.RichEmbed()
          .setColor("RANDOM")
          .addField('❤سيرفر الدعم الفني', `    `)
@@ -138,7 +138,7 @@ m.sendMessage(args)
 
 
    client.on('message', message => {
-    if (message.content.startsWith("bbot")) {
+    if (message.content.startsWith("mbot")) {
     message.channel.send({
         embed: new Discord.RichEmbed()
             .setAuthor(client.user.username,client.user.avatarURL)
@@ -160,7 +160,7 @@ m.sendMessage(args)
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
-          client.user.setActivity("bhelp | Light shop",{type: 'WATCHING'});
+          client.user.setActivity("mhelp | Light shop",{type: 'WATCHING'});
   
   });
 
